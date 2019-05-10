@@ -1,0 +1,27 @@
+{
+  "name": "cli-demo",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "bin": {
+    "lol": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0"
+  },
+  "dependencies": {
+    "commander": "^2.20.0",
+    "download-git-repo": "^1.1.0",
+    "io-spin": "^0.4.1",
+    "rimraf": "^2.6.3",
+    "yeoman-generator": "^3.2.0"
+  }
+}

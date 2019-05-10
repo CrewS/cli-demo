@@ -1,0 +1,9 @@
+import { Controller } from 'egg';
+
+export default class <%= name %>Controller extends Controller {
+  public async index() {
+    const { ctx, service } = this;
+    const result = await service.<%= name %>.list();
+    await ctx.render('<%= name %>.tpl', {list: result});
+  }
+}
